@@ -10,12 +10,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
+
 <p align="center">
-  <img alt="Updated React Native Beautiful Timeline"
-        src="assets/Screenshots/" />
   <img alt="React Native Beautiful Timeline"
         src="assets/Screenshots/example.gif" />
   <img alt="React Native Beautiful Timeline"
+        src="assets/Screenshots/example.png" />
+        <h1>Updated behavior.</h1>
+        <p>I made the Item pressable which allows you to send a prop as onPress and be able to work will the date at each Point/Event. </p>
+  <img  alt="React Native Beautiful Timeline"
         src="assets/Screenshots/pressFunctionality.png" />
 </p>
 
