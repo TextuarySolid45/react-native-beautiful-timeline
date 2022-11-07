@@ -48,9 +48,9 @@
   },
   "scripts": {
     "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "version": "npm run format && git add -A src",
+    "version": "npm run format && git add -A lib",
     "postversion": "git push && git push --tags",
     "prettier": "cd lib && npx prettier --write . && git add .",
     "prepare": "husky install",
