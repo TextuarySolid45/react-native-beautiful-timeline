@@ -1,4 +1,4 @@
-<img alt="React Native Beautiful Timeline" src="assets/logo.png" width="1050"/>
+<img alt="React Native Beautiful Timeline with Pressable Items" src="assets/logo.png" width="1050"/>
 
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-beautiful-timeline)
 
@@ -11,10 +11,12 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 <p align="center">
+  <img alt="Updated React Native Beautiful Timeline"
+        src="assets/Screenshots/" />
   <img alt="React Native Beautiful Timeline"
         src="assets/Screenshots/example.gif" />
   <img alt="React Native Beautiful Timeline"
-        src="assets/Screenshots/example.png" />
+        src="assets/Screenshots/pressFunctionality.png" />
 </p>
 
 # Installation
@@ -118,7 +120,15 @@ Each card comes from `data` array and each **day** comes from each `object` from
 Please take a look at above data formatting. Library itself solves everything for you if the data format is correct.
 
 ```jsx
-<Timeline data={data} />
+
+const onPress = (date:number) => {
+  console.debug(moment(date).format("LT"));
+};
+
+<Timeline 
+  onPress={onPress}
+  data={data} 
+/>
 ```
 
 ## Configuration - Props
