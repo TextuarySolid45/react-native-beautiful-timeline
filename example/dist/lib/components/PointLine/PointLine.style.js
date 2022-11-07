@@ -17,17 +17,17 @@ export default StyleSheet.create({
     dayTextStyle: {
         color: "#984cf8",
         fontWeight: "700",
-        width: '100%'
+        width: "100%",
     },
     monthTextStyle: {
-        color: 'black,',
-        width: '100%',
-        fontStyle: 'italic',
+        color: "black,",
+        width: "100%",
+        fontStyle: "italic",
         fontWeight: "500",
     },
     timeTextStyle: {
-        color: "#984cf9"
-    }
+        color: "#984cf9",
+    },
 });
 export const _dashStyle = (length) => ({
     width: 1,

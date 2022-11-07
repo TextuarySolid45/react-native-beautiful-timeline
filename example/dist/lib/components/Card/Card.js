@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, } from "react-native";
 import moment from "moment";
 import Androw from "react-native-androw";
 /**
@@ -15,28 +15,30 @@ const Card = ({ onPress, isCard = true, data, titleTextStyle, subtitleTextStyle,
                 backgroundColor: "trasnsparent",
             },
         ]}>
-    <Pressable onPress={() => { onPress(date); }}>
-      <Androw style={[
+      <Pressable onPress={() => {
+            onPress(date);
+        }}>
+        <Androw style={[
             styles.cardContainer,
             isCard && styles.cardContainerShadowStyle,
         ]}>
-        <View style={styles.cardContainerGlue}>
-          <Text numberOfLines={1} style={[styles.titleTextStyle, titleTextStyle]}>
-            {title}
-          </Text>
-          <Text numberOfLines={2} style={[styles.subtitleTextStyle, subtitleTextStyle]}>
-            {subtitle}
-          </Text>
-        </View>
-      </Androw>
-      <Text numberOfLines={1} style={[
+          <View style={styles.cardContainerGlue}>
+            <Text numberOfLines={1} style={[styles.titleTextStyle, titleTextStyle]}>
+              {title}
+            </Text>
+            <Text numberOfLines={2} style={[styles.subtitleTextStyle, subtitleTextStyle]}>
+              {subtitle}
+            </Text>
+          </View>
+        </Androw>
+        <Text numberOfLines={1} style={[
             styles.dateTextStyle,
             isCard && { marginTop: 8 },
             dateTextStyle,
         ]}>
-        {moment(date).format(dateFormat)}
+          {moment(date).format(dateFormat)}
         </Text>
-        </Pressable>
+      </Pressable>
     </Androw>);
 };
 export default Card;

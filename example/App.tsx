@@ -64,7 +64,7 @@ const dummyData = [
 ];
 
 const onPress = (date:number) => {
-  console.debug(moment(date).format("DD"));
+  console.debug(moment(date).format("LT"));
 };
 
 const App = () => {
