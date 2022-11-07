@@ -1,7 +1,7 @@
 {
-  "name": "react-native-beautiful-timeline",
-  "version": "1.0.1",
-  "description": "Fully customizable, beautifully designed Timeline for React Native.",
+  "name": "react-native-beautiful-timeline-pressable",
+  "version": "1.1.0",
+  "description": "Updated to be Pressable.",
   "keywords": [
     "timeline",
     "beautiful",
@@ -17,11 +17,10 @@
     "ui-lib",
     "rn"
   ],
-  "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-beautiful-timeline/issues",
+  "bugs": "https://github.com/TextuarySolid45/react-native-beautiful-timeline-pressable/issues",
   "main": "./build/dist/Timeline.js",
-  "repository": "git@github.com:WrathChaos/react-native-beautiful-timeline.git",
-  "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
+  "repository": "git@github.com:TextuarySolid45/react-native-beautiful-timeline-pressable.git",
+  "author": "Gabe (Gabo like in El Chapo) <33gabriel33lopez@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@freakycoder/react-native-helpers": ">= 0.1.0",
