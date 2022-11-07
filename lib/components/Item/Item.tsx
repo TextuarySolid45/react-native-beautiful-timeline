@@ -13,9 +13,11 @@ interface ItemProps {
   data: ITimeline;
   list: ITimelineData[];
   isLastMember: boolean;
+  onPress: (date: number) => void;
 }
 
 const Item: React.FC<ItemProps> = ({
+  onPress,
   style,
   data,
   list,
@@ -23,7 +25,7 @@ const Item: React.FC<ItemProps> = ({
   ...rest
 }) => {
   const renderItem = (item: ITimelineData, index: number) => {
-    return <Card {...rest} key={index} isCard data={item} />;
+    return <Card {...rest} onPress={onPress} key={index} isCard data={item} />;
   };
 
   return (

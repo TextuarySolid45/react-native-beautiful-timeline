@@ -1,7 +1,8 @@
 import * as React from "react";
 import { StatusBar, SafeAreaView } from "react-native";
-import Timeline from "react-native-beautiful-timeline";
+import Timeline from "./dist/lib/Timeline";
 import { ModernHeader } from "@freakycoder/react-native-header-view";
+import moment from 'moment';
 
 const dummyData = [
   {
@@ -62,6 +63,10 @@ const dummyData = [
   },
 ];
 
+const onPress = (date:number) => {
+  console.debug(moment(date).format("DD"));
+};
+
 const App = () => {
   return (
     <>
@@ -84,6 +89,7 @@ const App = () => {
           leftIconColor="#984cf8"
         />
         <Timeline
+          onPress={onPress}
           data={dummyData}
           dashThickness={2}
           dashLength={dummyData.length}

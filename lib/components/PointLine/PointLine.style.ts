@@ -6,6 +6,7 @@ interface Style {
   dividerStyle: ViewStyle;
   dayTextStyle: TextStyle;
   monthTextStyle: TextStyle;
+  timeTextStyle: TextStyle;
 }
 
 export default StyleSheet.create<Style>({
@@ -26,9 +27,16 @@ export default StyleSheet.create<Style>({
   dayTextStyle: {
     color: "#984cf8",
     fontWeight: "700",
+    width: "100%",
   },
   monthTextStyle: {
-    color: "#ded9e6",
+    color: "black,",
+    width: "100%",
+    fontStyle: "italic",
+    fontWeight: "500",
+  },
+  timeTextStyle: {
+    color: "#984cf9",
   },
 });
 

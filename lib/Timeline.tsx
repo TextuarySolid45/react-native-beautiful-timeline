@@ -13,9 +13,11 @@ type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 interface TimelineProps extends DashProps {
   timelineStyle?: CustomStyleProp;
   data: ITimeline[];
+  onPress: (date: number) => void;
 }
 
 const Timeline: React.FC<TimelineProps> = ({
+  onPress,
   data,
   timelineStyle,
   ...rest
@@ -25,6 +27,7 @@ const Timeline: React.FC<TimelineProps> = ({
     return (
       <Item
         {...rest}
+        onPress={onPress}
         data={item}
         list={item.data}
         isLastMember={isLastMember}

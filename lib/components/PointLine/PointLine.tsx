@@ -14,6 +14,7 @@ interface PointLineProps {
   isLastMember: boolean;
   dayTextStyle?: StyleProp<TextStyle>;
   monthTextStyle?: StyleProp<TextStyle>;
+  timeTextStyle?: StyleProp<TextStyle>;
 }
 
 const PointLine: React.FC<PointLineProps> = ({
@@ -22,6 +23,7 @@ const PointLine: React.FC<PointLineProps> = ({
   dayTextStyle,
   length,
   monthTextStyle,
+  timeTextStyle,
   ...rest
 }) => {
   return (
@@ -32,6 +34,9 @@ const PointLine: React.FC<PointLineProps> = ({
         </Text>
         <Text style={[styles.monthTextStyle, monthTextStyle]}>
           {moment(date).format("ddd").toUpperCase()}
+        </Text>
+        <Text style={[styles.timeTextStyle, timeTextStyle]}>
+          {moment(date).format("LT").toUpperCase()}
         </Text>
       </View>
       <View style={styles.dividerStyle}>
