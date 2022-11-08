@@ -1,6 +1,6 @@
 {
   "name": "react-native-beautiful-timeline-pressable",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Updated to be Pressable.",
   "keywords": [
     "timeline",
@@ -17,7 +17,7 @@
     "ui-lib",
     "rn"
   ],
-  "bugs": "https://github.com/TextuarySolid45/react-native-beautiful-timeline-pressable/issues",
+  "bugs": "https://github.com/TextuarySolid45/react-native-beautiful-timeline",
   "main": "./build/dist/Timeline.js",
   "repository": "git@github.com:TextuarySolid45/react-native-beautiful-timeline-pressable.git",
   "author": "Gabe (Gabo like in El Chapo) <33gabriel33lopez@gmail.com>",
