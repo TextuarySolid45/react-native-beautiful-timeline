@@ -30,7 +30,7 @@ export default StyleSheet.create<Style>({
     width: "100%",
   },
   monthTextStyle: {
-    color: "black,",
+    color: "black",
     width: "100%",
     fontStyle: "italic",
     fontWeight: "500",
