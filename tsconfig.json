@@ -35,6 +35,6 @@
     "babel.config.js",
     "metro.config.js",
     "jest.config.js",
-    "example/dist/**/*" 
+    "build/dist/**/*"
   ]
 }
